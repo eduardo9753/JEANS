@@ -1,0 +1,370 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.color-izquiedo{
+    border-left: 5px solid #e3780a;
+    padding-left: 18px;
+}
+
+
+/*ESTILOS LOGO*/
+.header .navbar-brand .logo{
+    border-radius: 10%;
+    width: 125px;
+    height: 80px;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+
+
+/*Estilos Header*/
+.header{
+    /* background-color: #194DE6;*/
+    position:fixed;
+    width: 100%;
+    z-index: 900;
+}
+
+/*Estilos navbar*/
+.navbar .navbar-nav .nav-item a{
+    font-size: 22px;
+}
+
+/*Estilos fondo al comienzo*/
+.Fondo{
+    background-image: url(../imgEmpresa/fondo.jpg);
+    width: 100%;
+    height: 95vh;
+    background-attachment: fixed;
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 45px;
+    position: relative;
+}
+.Fondo h1{
+    padding-top: 100px;
+    animation: textIzquierda 1s ease-in-out;
+}
+.Fondo .flex-img-diseños{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+.Fondo .flex-img-diseños img{
+    animation: imagenArriba 1s ease-in-out;
+}
+
+
+/*Estilos Empresa*/
+.Empresa{
+    background-color: whitesmoke;
+}
+.centrado{
+    align-items: center;
+}
+
+
+/*Estilosa para las imagenes del carrousel*/
+.carousel-inner img{
+    height: 400px;
+}
+@media(max-width: 600px){
+   .carousel-inner img{
+    height: 250px;
+   }
+}
+
+
+
+/*Estilos Mision,Vision*/
+.Empresa-Caracteristicas .col-md-4 .card-header{
+    background-color: #000000;
+}
+.Empresa-Caracteristicas .col-md-4 h2{
+    color: #FFFFFF;
+}
+.Empresa-Caracteristicas .col-md-4 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+
+    transition: all .2s ease-in-out;
+}
+.Empresa-Caracteristicas .col-md-4 img:hover{
+    transform: scale(1.1);
+    -webkit-box-shadow: 0px 0px 15px 1px #387FFF; 
+    box-shadow: 0px 0px 15px 1px #387FFF;
+}
+
+
+
+
+/*Estilos Productos */
+.Productos{
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)), url(../imgEmpresa/productofondo.jpg);
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Productos .producto-img img{
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px; 
+
+    transition: all .3s ease-in-out;
+} 
+.Productos .producto-img img:hover{
+    transform: scale(1.1);
+}
+
+
+
+/*Estilos Contatacnos*/
+.Contactanos{
+    background-image: url(../imgEmpresa/emailfondo.jpg);
+    width: 100%;
+    height: 65%;
+    background-attachment: fixed;
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title-Contactanos{
+    color: yellow;
+    font-weight: bold;
+}
+.Contactanos .form-group .label{
+    color: yellow;
+}
+
+
+/*Estilos mapa*/
+.MapaGeneral .miMapa{
+    width: 100%;
+    height: 400px;
+}
+@media(max-width: 600px){
+    .MapaGeneral .miMapa{
+        height: 200px;
+    } 
+}
+
+/*Estilos footer*/
+.footer{
+    background-color: #194DE6;
+}
+.footer .pf{
+    color: white;
+}
+.footer .contactos .flex-contactos{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.footer .contactos .flex-contactos img{
+    width: 45px;
+    height: 45px;
+}
+.footer .contactos .flex-contactos .title-contact{
+    color: yellow;
+    padding-left: 25px;
+}
+
+.footer .redes-sociales .flex-redes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media(max-width: 600px){
+    .footer .redes-sociales .flex-redes{
+        flex-direction: row;
+    } 
+}
+
+.footer .redes-sociales .flex-redes img{
+    width: 45px;
+    height: 45px; 
+}
+.footer .redes-sociales .flex-redes .title-redes{
+    color: yellow;
+}
+.footer .pie{
+    color: #FFFFFF;
+    font-size: 25px;
+    font-family: sans-serif;
+    margin-top: 15px;
+}
+
+
+
+
+/*----------------------------------------------------------*/
+/*ESTILOS PAGINA PRINCIPAL(Sistema)*/
+.header-principal .color{
+    background-color: #FA4C0C; 
+}
+
+
+
+
+/*----------------------------------------------------------*/
+/*ESTILOS PAGINA PRODUCTOS*/
+.fondo-Productos-totales{
+    background-image: url(../imgEmpresa/productofondo.jpg);
+    width: 100%;
+    height: 35vh;
+    background-attachment: fixed;
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fondo-Productos-totales h1{
+    font-size: 30px;
+    color: yellow;
+    /*padding-top: 30%;*/
+    padding-top: 140px;
+    animation: textIzquierda 1s ease-in-out;
+}
+
+
+
+
+
+
+/*----------------------------------------------------------*/
+/*ESTILOS PAGINA MIPRODUCTO*/
+.fondo-MiProducto{
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)), url(../imgEmpresa/productofondo.jpg);
+    width: 100%;
+    height: 35vh;
+    background-attachment: fixed;
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fondo-MiProducto h1{
+    font-size: 30px;
+    color: yellow;
+    /*padding-top: 30%;*/
+    padding-top: 135px;
+    animation: textIzquierda 1s ease-in-out;
+}
+
+.My-producto .caja-img .img-my-ptoduct{
+    animation: imagenArriba 1.5s ease-in-out;
+}
+
+/*----------------------------------------------------------*/
+/*ESTILOS PAGINA CARRITO COMPRAS*/
+.fondo-carrito-compras{
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)), url(../imgEmpresa/productofondo.jpg);
+    width: 100%;
+    height: 32vh;
+    background-attachment: fixed;
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fondo-carrito-compras h1{
+    font-size: 30px;
+    color: yellow;
+    /*padding-top: 30%;*/
+    padding-top: 100px;
+    animation: textIzquierda 1s ease-in-out;
+}
+.tabla-compras .table img{
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+}
+
+/*----------------------------------------------------------*/
+/*ESTILOS PAGINA LOGIN*/
+.Fondo-login{
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)), url(../imgEmpresa/login.jpg);
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Fondo-login .h1{
+    color: white;
+    font-family: sans-serif;
+}
+.Formulario .frm{
+    background-color: rgba(255,255,255,0.4);
+    padding: 35px;
+    border-radius:5px; 
+}
+
+.Formulario .frm .caja-login{
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.Formulario .frm .btn-login{
+    width: 100%;
+    background-color: #FA4C0C;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    border:none;
+    border-radius: 5px;
+
+    transition: all .2s ease-in-out;
+}
+
+.Formulario .frm .btn-login:hover{
+    -webkit-box-shadow: 0px 0px 15px 1px #FF2C12; 
+    box-shadow: 0px 0px 15px 1px #FF2C12;
+}
+
+
+/*keyframe*/
+@keyframes textIzquierda {
+  0% {
+    opacity: 0; /*sin visibilidad*/
+    transform: translateX(-150px); /*de izquierda a derecha*/
+  }
+  100% {
+    opacity: 1; /*se hace visible*/
+    transform: translate(0); /*ya no te muevas*/
+  }
+}
+
+@keyframes imagenArriba {
+  0% {
+    opacity: 0; /*sin visibilidad*/
+    transform: translateY(150px); /*de abajo hacia arriba*/
+  }
+  100% {
+    opacity: 1; /*se hace visible*/
+    transform: translate(0); /*ya no te muevas*/
+  }
+}
+
