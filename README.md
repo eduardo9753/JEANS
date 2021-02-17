@@ -54,7 +54,7 @@ CREATE TABLE administrador(
 );
 
 
---TBALA ROL
+--TABLA ROL
 CREATE TABLE rol(
   idrol int PRIMARY KEY NOT NULL,
   nombreRol varchar2(30) NOT NULL
@@ -62,7 +62,7 @@ CREATE TABLE rol(
 --UN ADMIN PUEDE TENER UN ROL Y UN ROL VARIOS ADMIN(2)
 
 
---TBALA CLIENTE
+--TABLA CLIENTE
 CREATE TABLE cliente (
   Dni varchar2(8) PRIMARY KEY NOT NULL,
   Nombre varchar2(255) NOT NULL,
@@ -75,7 +75,7 @@ CREATE TABLE cliente (
 );
 
 
-
+--TABLA RECLAMOS
 CREATE TABLE libroReclamos(
   idlibroReclamos int PRIMARY KEY NOT NULL,
   Dni_cliente varchar2(8) NOT NULL,--foranea cliente
@@ -86,13 +86,13 @@ CREATE TABLE libroReclamos(
   estado_libro int NOT NULL
 );
 
-
+--TABLA SECTOR
 CREATE TABLE sector(
   idsector char(2) PRIMARY KEY NOT NULL,
   sector varchar2(20) NOT NULL
 );
 
-
+--TABLA COMPRAS
 CREATE TABLE compras (
   idCompras int PRIMARY KEY NOT NULL,
   Dni varchar2(8)  NOT NULL,--foranea
@@ -102,7 +102,7 @@ CREATE TABLE compras (
   estado_compras int NOT NULL
 );
 
-
+--TABLA PRODUCTOS
 CREATE TABLE producto (
   idProducto int PRIMARY KEY NOT NULL,
   Nombres varchar2(255) NOT NULL,
@@ -114,7 +114,7 @@ CREATE TABLE producto (
   idestado int NOT NULL--foranea tabla estado
 );
 
- 
+ --TABLA DETALLE-COMPRAS
 CREATE TABLE detalle_compras (
   idDetalle int PRIMARY KEY NOT NULL,
   idProducto int NOT NULL,--foranea tabla productos
@@ -123,13 +123,13 @@ CREATE TABLE detalle_compras (
   PrecioCompra float NOT NULL 
 );
 
-
+--TABLA CATEGORIA
 CREATE TABLE categoria (
   idcategoria int PRIMARY KEY NOT NULL,
   categoria varchar2(50) NOT NULL
 );
 
-
+--TABLA ESTADO
 CREATE TABLE estado (
   idestado int PRIMARY KEY NOT NULL,
   estado varchar2(50) NOT NULL
